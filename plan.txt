@@ -1,0 +1,33 @@
+This website is library management system:it will contain the following features:
+Users will be Librarians and Readers
+
+1.homepage-register for user//register for librarian//login for librarian and user
+(only admin user can add a librarian)
+
+2.Librarian management page-add book,remove book,view all books and all their details
+
+3.Readers page-view all available books list,lend book and deposit book,view lended books
+
+{can also add an email alert feature if in mood}
+
+/form/
+*librarian signup(modal)
+*reader signup(modal)
+*bookadd form(modal)
+*signin(modal)(common for everyone,should redirect to different pages depending on input)
+
+/Pages/
+*customer dashboard-view lended books and deposit books
+*customer-view all books page{should be more appealing than librarians note style}
+*librarian dashboard-add,delete and see all books status
+
+/models and their fiels:/
+
+*librarian:
+lusername,lpassword
+
+*customer:
+cusername(unique),cpassword,address,email
+
+*books:
+bname,bdesc,$bown(This will determine who the book is with,if it is not lended,bown will be library,if it is lended it will be cusername)
